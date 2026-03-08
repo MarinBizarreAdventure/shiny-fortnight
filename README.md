@@ -1,2 +1,0 @@
-# shiny-fortnight
-Random Project 
