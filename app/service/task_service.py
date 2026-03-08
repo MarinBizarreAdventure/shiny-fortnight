@@ -22,6 +22,7 @@ class TaskService:
         if task is None:
             raise ValueError(f"No task found with ID: {task_id}")
         task.done = True
+        self.repo.update(task)
         return task
     
     def delete_task(self, task_id: int) -> bool:
